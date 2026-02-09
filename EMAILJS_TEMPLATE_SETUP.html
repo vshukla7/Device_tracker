@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EmailJS Template - Copy This to Your EmailJS Dashboard</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; background: #f5f5f5; }
+        .instructions { background: #fff3cd; padding: 15px; border-left: 4px solid #ffc107; margin-bottom: 20px; }
+        .template { background: white; padding: 20px; border: 1px solid #ddd; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+    </style>
+</head>
+<body>
+    <div class="instructions">
+        <h2>📧 EmailJS Template Setup Instructions</h2>
+        <ol>
+            <li>Go to <a href="https://dashboard.emailjs.com/" target="_blank">EmailJS Dashboard</a></li>
+            <li>Click on <strong>Email Templates</strong></li>
+            <li>Click <strong>Create New Template</strong></li>
+            <li>Copy the HTML below into the <strong>Content</strong> section</li>
+            <li>Set <strong>Subject</strong> to: <code>🚨 Cyber Crime Alert - Device Information Captured</code></li>
+            <li>Click <strong>Save</strong></li>
+        </ol>
+        <p><strong>Note:</strong> All variables like <code>{{ip_address}}</code> will be automatically replaced with actual data.</p>
+    </div>
+
+    <div class="template">
+        <h3>Copy Everything Below This Line:</h3>
+        <hr>
+
+<!-- START OF EMAIL TEMPLATE -->
+<div style="font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; background: #f5f5f5; padding: 20px;">
+    
+    <!-- Header -->
+    <div style="background: #1a237e; color: white; padding: 20px; text-align: center; border-radius: 8px 8px 0 0;">
+        <h1 style="margin: 0; font-size: 24px;">🚨 CYBER CRIME ALERT SYSTEM 🚨</h1>
+        <p style="margin: 10px 0 0 0; font-size: 14px;">Government of India - Ministry of Home Affairs</p>
+    </div>
+
+    <!-- Alert Banner -->
+    <div style="background: #d32f2f; color: white; padding: 15px; text-align: center; font-weight: bold;">
+        ⚠️ DEVICE INFORMATION CAPTURED - ACTIVE INVESTIGATION
+    </div>
+
+    <!-- Main Content -->
+    <div style="background: white; padding: 30px; border-radius: 0 0 8px 8px;">
+        
+        <!-- IP Address & Location -->
+        <div style="margin-bottom: 30px; border-left: 4px solid #1a237e; padding-left: 15px;">
+            <h2 style="color: #1a237e; margin-top: 0;">📍 IP Address & Location</h2>
+            <table style="width: 100%; border-collapse: collapse;">
+                <tr>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;"><strong>IP Address:</strong></td>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;">{{ip_address}}</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;"><strong>Country:</strong></td>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;">{{ip_country}}</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;"><strong>City:</strong></td>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;">{{ip_city}}</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;"><strong>Region:</strong></td>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;">{{ip_region}}</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;"><strong>Postal Code:</strong></td>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;">{{ip_postal}}</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;"><strong>ISP/Provider:</strong></td>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;">{{ip_isp}}</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;"><strong>Coordinates:</strong></td>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;">{{ip_coordinates}}</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- User Information -->
+        <div style="margin-bottom: 30px; border-left: 4px solid #d32f2f; padding-left: 15px;">
+            <h2 style="color: #d32f2f; margin-top: 0;">👤 User Information</h2>
+            <table style="width: 100%; border-collapse: collapse;">
+                <tr>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;"><strong>Device Owner:</strong></td>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;">{{device_owner}}</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;"><strong>Timestamp:</strong></td>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;">{{timestamp}}</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;"><strong>Local Time:</strong></td>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;">{{local_time}}</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;"><strong>Timezone:</strong></td>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;">{{timezone}}</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Device Information -->
+        <div style="margin-bottom: 30px; border-left: 4px solid #ff9800; padding-left: 15px;">
+            <h2 style="color: #ff9800; margin-top: 0;">💻 Device Information</h2>
+            <table style="width: 100%; border-collapse: collapse;">
+                <tr>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;"><strong>Device Name:</strong></td>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;">{{device_name}}</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;"><strong>Device Type:</strong></td>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;">{{device_type}}</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;"><strong>Vendor:</strong></td>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;">{{vendor}}</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;"><strong>Platform:</strong></td>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;">{{platform}}</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Operating System -->
+        <div style="margin-bottom: 30px; border-left: 4px solid #4caf50; padding-left: 15px;">
+            <h2 style="color: #4caf50; margin-top: 0;">🖥️ Operating System</h2>
+            <table style="width: 100%; border-collapse: collapse;">
+                <tr>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;"><strong>OS:</strong></td>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;">{{os}}</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;"><strong>OS Name:</strong></td>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;">{{os_name}}</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;"><strong>OS Version:</strong></td>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;">{{os_version}}</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Browser Information -->
+        <div style="margin-bottom: 30px; border-left: 4px solid #2196f3; padding-left: 15px;">
+            <h2 style="color: #2196f3; margin-top: 0;">🌐 Browser Information</h2>
+            <table style="width: 100%; border-collapse: collapse;">
+                <tr>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;"><strong>Browser:</strong></td>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;">{{browser}}</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;"><strong>Browser Name:</strong></td>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;">{{browser_name}}</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;"><strong>Browser Version:</strong></td>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;">{{browser_version}}</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;"><strong>Language:</strong></td>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;">{{language}}</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;"><strong>All Languages:</strong></td>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;">{{all_languages}}</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;"><strong>Cookies Enabled:</strong></td>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;">{{cookies_enabled}}</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;"><strong>Do Not Track:</strong></td>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;">{{do_not_track}}</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Network Information -->
+        <div style="margin-bottom: 30px; border-left: 4px solid #9c27b0; padding-left: 15px;">
+            <h2 style="color: #9c27b0; margin-top: 0;">📡 Network Information</h2>
+            <table style="width: 100%; border-collapse: collapse;">
+                <tr>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;"><strong>Network Type:</strong></td>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;">{{network_type}}</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;"><strong>Connection Speed:</strong></td>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;">{{connection_speed}}</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;"><strong>Network Latency:</strong></td>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;">{{network_latency}}</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;"><strong>Save Data Mode:</strong></td>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;">{{save_data_mode}}</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;"><strong>Online Status:</strong></td>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;">{{online_status}}</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Battery Information -->
+        <div style="margin-bottom: 30px; border-left: 4px solid #ff5722; padding-left: 15px;">
+            <h2 style="color: #ff5722; margin-top: 0;">🔋 Battery Information</h2>
+            <table style="width: 100%; border-collapse: collapse;">
+                <tr>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;"><strong>Battery Level:</strong></td>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;">{{battery_level}}</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;"><strong>Charging Status:</strong></td>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;">{{charging_status}}</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;"><strong>Charging Time:</strong></td>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;">{{charging_time}}</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;"><strong>Discharging Time:</strong></td>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;">{{discharging_time}}</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Screen & Display -->
+        <div style="margin-bottom: 30px; border-left: 4px solid #00bcd4; padding-left: 15px;">
+            <h2 style="color: #00bcd4; margin-top: 0;">🖥️ Screen & Display</h2>
+            <table style="width: 100%; border-collapse: collapse;">
+                <tr>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;"><strong>Screen Resolution:</strong></td>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;">{{screen_resolution}}</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;"><strong>Available Screen:</strong></td>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;">{{available_screen}}</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;"><strong>Window Size:</strong></td>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;">{{window_size}}</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;"><strong>Color Depth:</strong></td>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;">{{color_depth}}</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;"><strong>Pixel Depth:</strong></td>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;">{{pixel_depth}}</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;"><strong>Pixel Ratio:</strong></td>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;">{{pixel_ratio}}</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;"><strong>Orientation:</strong></td>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;">{{orientation}}</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Hardware Information -->
+        <div style="margin-bottom: 30px; border-left: 4px solid #795548; padding-left: 15px;">
+            <h2 style="color: #795548; margin-top: 0;">⚙️ Hardware Information</h2>
+            <table style="width: 100%; border-collapse: collapse;">
+                <tr>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;"><strong>GPU:</strong></td>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;">{{gpu}}</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;"><strong>CPU Cores:</strong></td>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;">{{cpu_cores}}</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;"><strong>Device Memory:</strong></td>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;">{{device_memory}}</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Input & Media Devices -->
+        <div style="margin-bottom: 30px; border-left: 4px solid #607d8b; padding-left: 15px;">
+            <h2 style="color: #607d8b; margin-top: 0;">🎤 Input & Media Devices</h2>
+            <table style="width: 100%; border-collapse: collapse;">
+                <tr>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;"><strong>Touch Support:</strong></td>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;">{{touch_support}}</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;"><strong>Max Touch Points:</strong></td>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;">{{max_touch_points}}</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;"><strong>Audio Inputs:</strong></td>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;">{{audio_inputs}}</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;"><strong>Audio Outputs:</strong></td>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;">{{audio_outputs}}</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;"><strong>Video Inputs (Cameras):</strong></td>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;">{{video_inputs}}</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Page Information -->
+        <div style="margin-bottom: 30px; border-left: 4px solid #3f51b5; padding-left: 15px;">
+            <h2 style="color: #3f51b5; margin-top: 0;">📄 Page Information</h2>
+            <table style="width: 100%; border-collapse: collapse;">
+                <tr>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;"><strong>Page URL:</strong></td>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee; word-break: break-all;">{{page_url}}</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;"><strong>Referrer:</strong></td>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;">{{referrer}}</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Technical Details -->
+        <div style="margin-bottom: 30px; border-left: 4px solid #9e9e9e; padding-left: 15px;">
+            <h2 style="color: #9e9e9e; margin-top: 0;">🔧 Technical Details</h2>
+            <table style="width: 100%; border-collapse: collapse;">
+                <tr>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;"><strong>Plugins Count:</strong></td>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;">{{plugins_count}}</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;"><strong>PDF Viewer:</strong></td>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;">{{pdf_viewer}}</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee;"><strong>User Agent:</strong></td>
+                    <td style="padding: 8px; border-bottom: 1px solid #eee; word-break: break-all; font-size: 11px;">{{user_agent}}</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Complete Device Data (JSON) -->
+        <div style="margin-bottom: 30px; border-left: 4px solid #000; padding-left: 15px;">
+            <h2 style="color: #000; margin-top: 0;">📋 Complete Device Data (JSON)</h2>
+            <pre style="background: #f4f4f4; padding: 15px; border-radius: 4px; overflow-x: auto; font-size: 11px; line-height: 1.4;">{{complete_data}}</pre>
+        </div>
+
+        <!-- Footer Warning -->
+        <div style="background: #fff3cd; border-left: 4px solid #ffc107; padding: 15px; margin-top: 30px;">
+            <p style="margin: 0; font-weight: bold; color: #856404;">⚠️ OFFICIAL GOVERNMENT ALERT</p>
+            <p style="margin: 10px 0 0 0; color: #856404;">This email was automatically generated by the Cyber Crime Alert System<br>Government of India - Ministry of Home Affairs<br>Email sent via EmailJS.com</p>
+        </div>
+    </div>
+</div>
+<!-- END OF EMAIL TEMPLATE -->
+
+    </div>
+</body>
+</html>
